@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 200%;
+}
+h2{
+
+color: blue;
+    font-family: verdana;
+    font-size: 120%;
+
+
+}
+body {
+
+background-color: silver;
+
+}
+
+p {
+
+color: grey;
+
+}
+
+p.other{
+
+color: white;
+font-size: 120%;
+
+}
+
+p.other2{
+
+color: white;
+font-size: 80%;
+
+}
+
+form.pos_left{
+position: relative;
+float: left;
+}
+
+form.pos_right{
+
+width: 500px;
+left: 200px;
+position: relative;
+float: left;
+background-color: blue;
+}
+
+input{
+
+margin: 10px;
+width: 300px;
+}
+input.checkbox{
+
+}
+
+input[type=submit] {
+    padding:15px; 
+    background: red; 
+    width: 200px;
+    border:0 none;
+    
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+</style>
+
+<body>
+<h1> Enter the System</h1>
+
+<p> It is necessary to login in Your Account in order to sign up for a course. </p>
+
+<h2> ARE YOU NEW? REGISTER</h2>
+
+<form class = "pos_left" action="action_page.php" autocomplete="on">
+
+<input placeholder = "User Name" type="name" required name="name">
+
+<br>
+<br>
+
+<input placeholder = "email" type="email" required autocomplete = "off">
+
+<br>
+<br>
+
+<input placeholder = "Password" type="password" required name="psw">
+
+<br>
+<br>
+
+<input placeholder = "Confirm Password" type="password" required name="psw">
+<br>
+<br>
+<input type="submit" value = "Register">
+ </form>
+
+<form class = "pos_right" action="action_page.php" autocomplete="on">
+
+<center> <p class = "other"> Already a Student Log In <p> </center>
+
+<input placeholder = "User Name" type="name" required name="name">
+
+<br>
+<br>
+
+<input placeholder = "Password" type="password" required name="psw">
+
+<br>
+<br>
+
+<input type="submit" value = "Login">
+<input type = "checkbox" value = "remember me"> Remember Me?
+
+  </form>
+
+</body>
+</html>
